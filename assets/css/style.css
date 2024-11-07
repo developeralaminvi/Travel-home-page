@@ -1,0 +1,934 @@
+/* Basic Texture*/
+
+*,a,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    margin: 0 !important;
+}
+
+img{
+    width: 100%;
+}
+
+/* Header styles */
+.main-header{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.main-header .logo a{
+    color: black;
+    font-family: Poppins;
+    font-size: 24.89px;
+    font-weight: 400;
+}
+
+.main-header .logo a span{
+    background: linear-gradient(to right, #6318DD, #D03BE8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+/* Menu styles */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative; 
+    z-index: 1;
+}
+
+.menu .active{
+    color: #6318DD;
+}
+
+.menu a:hover {
+    color: #6318DD;
+    -webkit-transition: all 1s ease;
+    transition: all 0.3s ease;
+}
+
+/* header buttom styles */
+.header-buttom {
+    text-align: end;
+}
+
+.header-buttom .login {
+    font-size: 16.27px;
+    font-family: 'Inter';
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: solid 1px #6318DD;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    color: #6318DD;
+}
+
+.header-buttom .login:hover{
+    background-color: #6318DD;
+    color: #fff;
+}
+
+
+.header-buttom .SignUp {
+    font-size: 16.27px;
+    font-family: 'Inter';
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: solid 1px #6318DD;
+    border-radius: 30px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    background-color: #6318DD;
+    color: #fff;
+}
+
+.header-buttom .SignUp:hover{
+    background-color: #ffffff;
+    color: #6318DD;
+}
+
+.mobile-header{
+    display: none;
+}
+
+/* Header respobsive  */
+
+@media (max-width: 984px) {
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header{
+        display: block;
+    }
+
+}
+
+.mobile-header .menu ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.mobile-header .menu ul li {
+    list-style: none;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.mobile-header .header-buttom .login {
+    font-size: 13.27px;
+    font-family: 'Inter';
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: solid 1px #6318DD;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    color: #6318DD;
+}
+
+.mobile-header .header-buttom .SignUp {
+    font-size: 13.27px;
+    font-family: 'Inter';
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: solid 1px #6318DD;
+    border-radius: 30px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    background-color: #6318DD;
+    color: #fff;
+}
+
+.mobile-header-menu-icom{
+    color: #6318DD;
+    border-color: #6318DD;
+}
+
+/* Discover styles */
+
+
+section.discover {
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 578px) {
+    section.discover {
+        margin-bottom: 0;
+    }
+}
+
+.discover-content p img {
+    width: 28px;
+}
+
+.discover-content p:first-child {
+    font-family: Inter;
+    font-size: 14.55px;
+    font-weight: 400;
+    line-height: 22.45px;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 18px;
+    box-shadow: 0px 10.82px 23.96px 0px #FD49F71A;
+    border-radius: 30px;
+}
+
+.discover-content h2 {
+    font-family: Inter;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 72.61px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+@media (max-width: 984px) {
+    .discover-content h2 {
+        font-size: 40px;
+        line-height: 50.61px;
+    }
+
+}
+
+
+.discover-content h2 span{
+    background: linear-gradient(to right, #6318DD, #D03BE8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+p.discover-content-text {
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: left;
+    color: #616161;
+}
+
+a.discover-btn-1 {
+    background: linear-gradient(132.75deg, #6318DD -5.33%, #D03BE8 108.08%);
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px 0px #6338ff7a;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+a.discover-btn-1:hover{
+    background:#fff;
+    color: #6318DD;
+    border: 1px solid #6318DD;
+    
+}
+
+a.discover-btn-2{
+    background:#fff;
+    color: #6318DD;
+    border: 1px solid #6318DD;
+    padding: 7px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+a.discover-btn-2:hover{
+    background: linear-gradient(132.75deg, #6318DD -5.33%, #D03BE8 108.08%);
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+
+  .discover-content{
+    margin-top: 120px;
+  }
+
+}
+
+.discover-img-content .img-1 {
+    position: absolute;
+    left: 79px;
+    top: 97px;
+    width: 117.26px;
+    animation: slideLeftToRight 5s linear infinite; /* Animation name, duration, easing, and repeat */
+}
+
+.discover-img-content .img-2 {
+    width: 74%;
+}
+
+
+@media (max-width: 984px) {
+    .discover-img-content .img-2 {
+        width: 100%;
+    }
+    .discover-img-content .img-1 {
+        position: absolute;
+        left: -9px;
+        top: 52px;
+        width: 79.26px;
+        animation: slideLeftToRight2 5s linear infinite;
+    }
+
+    @keyframes slideLeftToRight2 {
+        0% {
+            left: -9px;
+            top: 97px;
+        }
+        50% {
+            left: 10px;
+            top: 60px;
+        }
+        100% {
+            left: -9px;
+            top: 97px;
+        }
+    }
+
+}
+
+@media (max-width: 520px) {
+    .discover-img-content .img-2 {
+        width: 100%;
+    }
+    .discover-img-content .img-1 {
+        position: absolute;
+        left: -55px;
+        top: 52px;
+        width: 79.26px;
+        animation: slideLeftToRight3 5s linear infinite;
+    }
+
+    @keyframes slideLeftToRight3 {
+        0% {
+            left: 55px;
+            top: 97px;
+        }
+        50% {
+            left: 70px;
+            top: 60px;
+        }
+        100% {
+            left: 55px;
+            top: 97px;
+        }
+    }
+
+}
+
+@media (max-width: 520px) {
+    .discover-img-content .img-2 {
+        width: 70%;
+    }
+
+}
+
+
+@keyframes slideLeftToRight {
+    0% {
+        left: 79px;
+        top: 150px;
+    }
+    50% {
+        left: 150px;
+        top: 97px;
+    }
+    100% {
+        left: 79px;
+        top: 150px;
+    }
+}
+
+
+.discover-destination-content {
+    position: absolute;
+    bottom: -119px;
+    left: -27px;
+}
+
+
+@media (max-width: 520px) {
+    .discover-destination-content {
+        position: absolute;
+        bottom: -119px;
+        left: 25px;
+    }
+
+
+}
+
+
+.popular-destination {
+    width: 280.45px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 1px 10px 13px 1px #00000030;
+    padding: 10px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    border: #fff solid 2px;
+}
+
+.popular-destination:hover{
+    border: solid 2px #D03BE8;
+    transition: all 0.3s ease;
+}
+
+.popular-destination h3 a{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 14px;
+    color: #000;
+    transition: all 1s ease;
+}
+
+.popular-destination-img {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.popular-destination img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+    border-radius: 15px;
+}
+.popular-destination:hover img{
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.popular-destination h3 a:hover{
+    background: linear-gradient(to right, #6318DD, #D03BE8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: all 1s ease;
+}
+
+
+
+p.destination-time {
+    font-family: Poppins;
+    font-size: 13.16px;
+    font-weight: 400;
+    color: #84829A;
+}
+
+.popular-destination ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.popular-destination ul li {
+    margin-right: 10px;
+}
+
+.popular-destination ul li a {
+    background: #f5f5f5;
+    border-radius: 50%;
+    padding: 10px 10px;
+    color: #84829a;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.popular-destination ul li a:hover{
+    background-color: #6318DD;
+    color: #fff;
+}
+
+.destination-people {
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destination-people p:first-child{
+    font-family: Inter;
+    font-size: 13.16px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: left;
+    color: #84829A;
+    margin: 0;
+}
+
+p.destination-Wishlist {
+    margin: 0;
+    color: #D03BE8;
+    cursor: pointer;
+}
+
+.destination-Wishlist i {
+    transition: 0.3s;
+}
+
+.destination-Wishlist:hover i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f004";
+}
+
+.ongoing {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.progress-ongoing {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    height: 4.43px;
+    margin-top: 7px;
+}
+
+.progress-bar {
+    height: 100%; 
+    background: linear-gradient(90deg, #6318DD, #D03BE8); 
+    width: 1%; 
+    border-radius: 10px; 
+    line-height: 30px; 
+    color: white; 
+    font-weight: bold; 
+    text-align: center; 
+    transition: width 1.5s ease-in-out;
+}
+
+.ongoing {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    box-shadow: 1px 7px 6px 0px #00000012;
+    position: absolute;
+    z-index: 9;
+    bottom: 38px;
+    background: #fff;
+    right: -86px;
+    border-radius: 10px;
+}
+
+.ongoing-img img {
+    border-radius: 50%;
+}
+
+.ongoing-content{
+    margin-left: 10px;
+}
+
+p.ongoing-sub {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color:#84829A;
+}
+
+h4.ongoing-title a{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+}
+
+h4.ongoing-title {
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 15px;
+}
+
+h4.ongoing-title a:hover{
+    background: linear-gradient(to right, #6318DD, #D03BE8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: all 1s ease;
+}
+
+p.ongoing-parsent {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+p.ongoing-parsent span{
+    color: #E960F5;
+}
+
+/* Most Popular Destination Section */
+
+h2.popular-destination-title {
+    font-family: Inter;
+    font-size: 55px;
+    font-weight: 600;
+    display: inline-block;
+    width: 50%;
+}
+
+
+@media (max-width: 984px) {
+    h2.popular-destination-title {
+        font-family: Inter;
+        font-size: 40px;
+    }
+
+}
+
+
+.destination-slider {
+    margin-top: 10px;
+    padding: 10px 0px;
+    position: relative;
+}
+
+.destination-price-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+p.destination-price {
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+p.booking-btn{
+    padding: 0;
+    margin: 0;
+}
+
+p.booking-btn a {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+    color: #2D3134;
+    border: 1px solid #2D3134;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+p.booking-btn a:hover{
+    background: #6318DD;
+    color: #fff;
+    border-color:#6318DD;
+}
+
+.popular-destination-item{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 1px 10px 13px 1px #E070FF1A;
+    padding: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    border: #fff solid 2px;
+    margin: 20px 0;
+}
+
+.destination-slider .item{
+    padding: 0 10px;
+}
+
+.popular-destination-item:hover{
+    border: solid 2px #D03BE8;
+    transition: all 0.3s ease;
+}
+
+
+.popular-destination-item h3 a{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 14px;
+    color: #000;
+    transition: all 1s ease;
+}
+
+.destination-img a {
+    height: auto;
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.popular-destination-img a {
+    height: 182px;
+    display: block;
+}
+
+.popular-destination-img {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.popular-destination-item img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+    border-radius: 15px;
+}
+.popular-destination-item:hover img{
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.popular-destination-item h3 a:hover{
+    background: linear-gradient(to right, #6318DD, #D03BE8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: all 1s ease;
+}
+
+.destination-slider .owl-nav {
+    position: absolute;
+    top: -86px;
+    right: 30px;
+}
+
+.destination-slider .owl-nav span {
+    display: inline-block;
+    align-content: baseline;
+    height: 54px;
+    width: auto;
+}
+
+.destination-slider .owl-theme .owl-nav [class*=owl-] {
+    height: 54px;
+    width: 54px;
+    align-content: baseline;
+    border-radius: 50%;
+    border: 1px solid #2D3134;
+    font-size: 30px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.destination-slider .owl-theme .owl-nav [class*=owl-]:hover {
+    
+    background: linear-gradient(to right, #6318DD, #D03BE8);
+}
+
+
+/* Why Choose Us Style */
+
+/* Main container for the 'Why Choose Us' section */
+
+section.choose-us {
+    margin-top: 50px;
+}
+
+
+/* Styling for the individual tab links */
+.tab-link {
+    padding: 15px;
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.tab-link.active {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 7px 11px 0px #EE2BDE1A;
+}
+
+.tab-link:hover {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 7px 11px 0px #EE2BDE1A;
+}
+
+.choose-us-tabs-content-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.choose-us-tabs-content-item .item-2 {
+    margin-left: 30px;
+}
+
+.choose-us-tabs-content-item .item-2 h3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.choose-us-tabs-content-item .item-2 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #636363;
+}
+
+a.choose-us-tabs-btn {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+a.choose-us-tabs-btn:hover{
+    color: #6318DD;
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Content area for each tab */
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.choose-us-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.choose-us-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+img.choose-us-img-1 {
+    position: absolute;
+    bottom: 8%;
+    height: auto;
+    width: 85%;
+    right: 8%;
+}
+
+.choose-us-box {
+    position: absolute;
+    background: #fff;
+    padding: 20px 10px;
+    bottom: 0;
+    left: 23px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img.choose-us-box-img-1 {
+    background: #E960F5;
+    width: 53px;
+    padding: 8px 11px;
+    border-radius: 50%;
+}
+
+.choose-us-box h4 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.choose-us-box p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #949596;
+}
+
+.choose-us-box-2 {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.box-content {
+    margin-left: 30px;
+}
+
+.box-content h4 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box-content p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #949596;
+}
+
+.choose-us-tabs h2 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+
+p.choose-us-tabs-content {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #616161;
+}
